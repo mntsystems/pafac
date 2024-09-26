@@ -358,11 +358,13 @@ section{
    grid-template-columns: repeat(auto-fit, 35rem);
    gap: 2rem;
    align-items: flex-start;
+   margin-top: 10px;
    justify-content: center;
 }
 
 .pricing .box-container .box{
    border:#346f43;
+   border: 1px solid #346f43;
    border-radius: .5rem;
    padding: 2.5rem;
 }
