@@ -669,6 +669,12 @@ section{
 
 @media (max-width:768px){
 
+   footer {
+      text-align: center;
+   }
+   footer .box .link, footer .box h3{
+      text-align: center;
+   }
    #menu-btn{
       display: inline-block;
    }
