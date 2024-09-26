@@ -362,6 +362,28 @@ section{
    justify-content: center;
 }
 
+.apresentation {
+   display: flex;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--bg-color);
+}
+
+.apresentation img {
+   max-width: 600px;
+   border-radius: 30px;
+   -webkit-box-shadow: 10px 10px 19px -7px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 19px -7px rgba(0,0,0,0.75);
+   box-shadow: 10px 10px 19px -7px rgba(0,0,0,0.75);
+}
+.apresentation p {
+   font-size: 18px;
+   color: white;
+   max-width: 500px;
+}
 .pricing .box-container .box{
    border:#346f43;
    border: 1px solid #346f43;
@@ -667,9 +689,20 @@ section{
       font-size: 55%;
    }
 
+   .apresentation img {
+      max-width: 300px;
+   }
+
 }
 
 @media (max-width:768px){
+   .apresentation {
+      flex-direction: column;
+   }
+   .apresentation p {
+      font-size: 12px;
+      text-align: center;
+   }
 
    footer {
       text-align: center;
