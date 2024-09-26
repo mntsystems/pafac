@@ -202,7 +202,7 @@ section{
 
 .features .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 35rem);
+   grid-template-columns: repeat(3, 1fr);
    gap: 2rem;
    align-items: flex-start;
    justify-content: center;
@@ -280,7 +280,7 @@ section{
 
 .top-games .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 26rem);
+   grid-template-columns: repeat(3, 1fr);
    gap: 2rem;
    align-items: flex-start;
    justify-content: center;
@@ -657,24 +657,6 @@ section{
    color: var(--main-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 
 @media (max-width:991px){
@@ -690,7 +672,12 @@ section{
    #menu-btn{
       display: inline-block;
    }
-
+   .features .box-container{
+      grid-template-columns: 1fr;
+   }
+   .top-games .box-container{
+      grid-template-columns: 1fr;
+   }
    .header .flex .navbar{
       position: fixed;
       top: 0; left: -120%;
